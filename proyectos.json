@@ -1,0 +1,16 @@
+{
+    "proyectos": [
+      {
+        "nombre": "Registro | Hogwarts",
+        "descripcion": "Sistema de Registro  de Usuario ambientado en la saga de Harry Potter",
+        "enlace": "https://samuelquisol.github.io/Registro_Hogwarts/1.formEstudiante.html",
+        "imagen": "hogwarts.jpg"
+      },
+      {
+        "nombre": "Búsqueda de Películas | CineMark",
+        "descripcion": "Sistema de Búsqueda utilizando un Recurso Web Online como Fuente de Información",
+        "enlace": "https://samuelquisol.github.io/Busqueda_CineMark/",
+        "imagen": "cinemark.jpg"
+      }
+    ]
+  }

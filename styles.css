@@ -1,0 +1,59 @@
+/* Estilos personalizados */
+
+/* Aquí puedes agregar estilos adicionales según sea necesario */
+.navbar-brand {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-social {
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.btn-social:hover {
+  color: rgb(94, 105, 113);
+}
+
+.neon-divider {
+  border-color: #4af !important;
+  box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
+}
+
+.rounded-circle {
+  border: 2px solid #4af;
+}
+
+hr.neon-divider {
+  transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+hr.neon-divider:hover {
+  border-color: #4af !important;
+  box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
+} 
+
+li{
+  text-decoration: none;
+}
+
+/* Cards */
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+.card-body{
+  display: grid;
+  justify-content: center;
+  img{
+    display: grid;
+    justify-content: center;  
+  }
+}
+
+.card-text{
+  display: grid;
+  justify-content: center;
+}
