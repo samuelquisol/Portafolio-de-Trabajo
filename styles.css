@@ -1,29 +1,90 @@
-/* Estilos personalizados */
+/* Estilos globales */
 
-/* Aquí puedes agregar estilos adicionales según sea necesario */
+html{
+  font-size: 110%;
+}
+
+/* Header y background de la página */
+body {
+  background-color: #42474A;
+  color: white;
+}
+
+/* Color de los párrafos dentro del cuerpo */
+p {
+  color: rgb(156, 156, 156);
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+}
+
+li{
+  a:hover{
+    text-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
+  }
+}
+
+/* Eliminar subrayado de enlaces en header, footer y cards */
+header a,
+footer a,
+.card a {
+  text-decoration: none;
+}
+
+/* Estilos del header de navegación */
+nav {
+  background-color: black;
+}
+
+          /* Barra de navegación */
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+/* Texto de la marca en el header */
 .navbar-brand {
   font-size: 24px;
   font-family: 'Montserrat', sans-serif;
 }
 
+                /* Tarjetas */
+.card {
+  background-color: rgba(0, 0, 0, 0.512);
+  border-radius: 2rem;
+  color: white;
+}
+
+/* Imágenes dentro de las tarjetas */
+.card img {
+  border-radius: 1rem;
+}
+
+/* Botones */
 .btn-social {
   font-size: 24px;
   transition: color 0.3s;
 }
 
+/* Efecto de cambio de color al pasar el mouse sobre los botones */
 .btn-social:hover {
   color: rgb(94, 105, 113);
 }
 
+/* Divisor de neon */
 .neon-divider {
   border-color: #4af !important;
   box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
 }
 
+/* Círculo redondeado */
 .rounded-circle {
   border: 2px solid #4af;
 }
 
+/* Efecto de cambio de sombra y color del divisor de neon al pasar el mouse */
 hr.neon-divider {
   transition: box-shadow 0.3s, border-color 0.3s;
 }
@@ -31,29 +92,35 @@ hr.neon-divider {
 hr.neon-divider:hover {
   border-color: #4af !important;
   box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
-} 
+}
 
-li{
+/* Listas */
+li {
   text-decoration: none;
 }
 
-/* Cards */
+/* Secciones específicas */
 
-.row{
+/* Filas */
+.row {
   display: flex;
   justify-content: center;
 }
 
-.card-body{
+/* Cuerpo de las tarjetas */
+.card-body {
   display: grid;
   justify-content: center;
-  img{
-    display: grid;
-    justify-content: center;  
-  }
 }
 
-.card-text{
+/* Imágenes dentro del cuerpo de las tarjetas */
+.card-body img {
+  display: grid;
+  justify-content: center;
+}
+
+/* Texto dentro de las tarjetas */
+.card-text {
   display: grid;
   justify-content: center;
 }

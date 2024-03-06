@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data.servicios.forEach(servicio => {
           perfilSection.innerHTML += `
             <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down">
-              <div class="card text-center">
+              <div class="card text-center cardPerfil">
                 <div class="card-body">
                   <img src="img/perfil/${servicio.imagen}" alt="${servicio.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
                   <h5 class="card-title">${servicio.nombre}</h5>
@@ -28,14 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
         data.proyectos.forEach(proyecto => {
           proyectosSection.innerHTML += `
             <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down">
-              <div class="card">
-                <div class="card-body">
-                  <img src="img/proyectos/${proyecto.imagen}" alt="${proyecto.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
-                  <h5 class="card-title text-center">${proyecto.nombre}</h5>
-                  <p class="card-text">${proyecto.descripcion}</p>
-                  <a href="${proyecto.enlace}" class="btn btn-primary">Ver proyecto</a>
+              <a href="${proyecto.enlace}" class="text-decoration-none">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/proyectos/${proyecto.imagen}" alt="${proyecto.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
+                    <h5 class="card-title text-center">${proyecto.nombre}</h5>
+                    <p class="card-text text-center">${proyecto.descripcion}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           `;
         });
