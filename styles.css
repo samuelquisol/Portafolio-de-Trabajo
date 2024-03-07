@@ -34,9 +34,14 @@ footer a,
 }
 
 /* Estilos del header de navegación */
-nav {
+.navbar{
   background-color: black;
 }
+
+footer{
+  background-color: rgb(42, 42, 42);
+}
+
 
           /* Barra de navegación */
 .navbar-brand,
@@ -54,12 +59,15 @@ nav {
 .card {
   background-color: rgba(0, 0, 0, 0.512);
   border-radius: 2rem;
-  color: white;
+  color: rgb(207, 207, 207);
+  border: 3px solid;
+  box-shadow: 0 0 0.1px, 0 0 20px #4af;
 }
 
 /* Imágenes dentro de las tarjetas */
 .card img {
   border-radius: 1rem;
+  border: 3px solid;
 }
 
 /* Botones */
@@ -75,8 +83,8 @@ nav {
 
 /* Divisor de neon */
 .neon-divider {
-  border-color: #4af !important;
-  box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
+  border: 1.5px solid;
+  box-shadow: 0 0 1px, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
 }
 
 /* Círculo redondeado */
@@ -87,11 +95,6 @@ nav {
 /* Efecto de cambio de sombra y color del divisor de neon al pasar el mouse */
 hr.neon-divider {
   transition: box-shadow 0.3s, border-color 0.3s;
-}
-
-hr.neon-divider:hover {
-  border-color: #4af !important;
-  box-shadow: 0 0 10px #4af, 0 0 20px #4af, 0 0 40px #4af, 0 0 80px #4af;
 }
 
 /* Listas */

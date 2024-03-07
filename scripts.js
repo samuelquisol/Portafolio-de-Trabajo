@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
               <div class="card text-center cardPerfil">
                 <div class="card-body">
                   <img src="img/perfil/${servicio.imagen}" alt="${servicio.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
-                  <h5 class="card-title">${servicio.nombre}</h5>
+                  <h5 class="card-title text-light">${servicio.nombre}</h5>
                   <p class="card-text">${servicio.descripcion}</p>
                 </div>
               </div>
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 <div class="card">
                   <div class="card-body">
                     <img src="img/proyectos/${proyecto.imagen}" alt="${proyecto.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
-                    <h5 class="card-title text-center">${proyecto.nombre}</h5>
+                    <h5 class="card-title text-center text-light">${proyecto.nombre}</h5>
                     <p class="card-text text-center">${proyecto.descripcion}</p>
                   </div>
                 </div>
