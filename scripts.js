@@ -1,26 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Cargar datos del archivo JSON para Perfil
-    fetch('perfil.json')
+    fetch('habilidadesProgramacion.json')
       .then(response => response.json())
       .then(data => {
         const perfilSection = document.querySelector('#perfil .row');
         data.servicios.forEach(servicio => {
           perfilSection.innerHTML += `
             <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down">
-              <div class="card text-center cardPerfil">
-                <div class="card-body">
-                  <img src="img/perfil/${servicio.imagen}" alt="${servicio.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
-                  <h5 class="card-title text-light">${servicio.nombre}</h5>
-                  <p class="card-text">${servicio.descripcion}</p>
+              <a href="${servicio.enlace}" class="text-decoration-none">
+                <div class="card text-center cardPerfil">
+                  <div class="card-body">
+                    <img src="img/perfil/${servicio.imagen}" alt="${servicio.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
+                    <h5 class="card-title text-light">${servicio.nombre}</h5>
+                    <p class="card-text">${servicio.descripcion}</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
-          `;
-        });
-      })
-      .catch(error => console.log('Error:', error));
-  
-    // Cargar datos del archivo JSON para Proyectos
+            `;
+          });
+        })
+        .catch(error => console.log('Error:', error));
+    
+      // Cargar datos del archivo JSON para Proyectos
     fetch('proyectos.json')
       .then(response => response.json())
       .then(data => {
@@ -42,7 +44,30 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       })
       .catch(error => console.log('Error:', error));
-  });
+    
+    // Cargar datos del archivo JSON para Habilidades Transversales
+    fetch('habilidadesTransversales.json')
+      .then(response => response.json())
+      .then(data => {
+        const habilidadesSection = document.querySelector('#habilidades .row');
+        data.habilidades.forEach(habilidad => {
+          habilidadesSection.innerHTML += `
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-down">
+              <a href="${habilidad.enlace}" class="text-decoration-none">
+                <div class="card">
+                  <div class="card-body">
+                    <img src="img/habilidades/${habilidad.imagen}" alt="${habilidad.nombre}" class="img-fluid mb-3 mx-auto" width="500px">
+                    <h5 class="card-title text-center text-light">${habilidad.nombre}</h5>
+                    <p class="card-text text-center">${habilidad.descripcion}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          `;
+        });
+      })
+      .catch(error => console.log('Error:', error));
+});
 
 document.addEventListener('DOMContentLoaded', function () {
 // Variables para almacenar el estado del header
@@ -67,12 +92,12 @@ window.addEventListener('scroll', function () {
     // Obtener la posición actual del scroll
     let scrollPosition = window.scrollY || document.documentElement.scrollTop;
 
-        // Verificar si el header está fijo
-        if (scrollPosition > headerHeight) {
-        // Guardar el estado del header si no está fijo
-            if (!isHeaderFixed) {
-                saveHeaderState();
-            }
-        }
-    });
+      // Verificar si el header está fijo
+      if (scrollPosition > headerHeight) {
+      // Guardar el estado del header si no está fijo
+          if (!isHeaderFixed) {
+              saveHeaderState();
+          }
+      }
+});
 });

@@ -1,0 +1,34 @@
+{
+    "habilidades": [
+        {
+            "nombre": "Desarrollo Profesional",
+            "descripcion": "Desarrollo de Habilidades Competentes para Crecimiento y la Proyección en el Entorno Laboral",
+            "imagen": "auto-aprendizaje.jpg",
+            "enlace": ""
+        },
+        {
+            "nombre": "Prompting Engineering",
+            "descripcion": "Desarrollo de Prompts para IA como Medio Productivo Capacitador para el Desarrollo Creativo.",
+            "imagen": "prompting-engineering.jpg",
+            "enlace": ""
+        },
+        {
+            "nombre": "Gestión de la Innovación",
+            "descripcion": "Fomento de la Innovación y la Creatividad en Entornos Empresariales.",
+            "imagen": "gestion-innovacion.jpg",
+            "enlace": ""
+        },
+        {
+            "nombre": "Emprendimiento y Marketing Digital",
+            "descripcion": "Desarrollo de Estrategias de Marketing Digital, Contenido Digital e Ideas de Gran Calidad con Impacto Positivo y Alto Valor",
+            "imagen": "emprendimiento-marketing.jpg",
+            "enlace": ""
+        },
+        {
+            "nombre": "Producción Musical",
+            "descripcion": "Composición y Producción de Música Original para Proyectos Multimedia.",
+            "imagen": "produccion-musical.jpg",
+            "enlace": "https://www.bandlab.com/samuelxter"
+        }
+    ]
+}

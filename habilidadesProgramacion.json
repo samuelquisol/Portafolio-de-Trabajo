@@ -1,0 +1,22 @@
+{
+  "servicios": [
+    {
+      "nombre": "Desarrollo Web",
+      "descripcion": "Desarrollo de Sitios Web Modernos y Funcionales.",
+      "imagen": "desarrollo-web.jpg",
+      "enlace": "#proyectos"
+    },
+    {
+      "nombre": "Gestión de Bases de Datos",
+      "descripcion": "Diseño, Implementación y Administración de Bases de Datos.",
+      "imagen": "gestion-bases-datos.jpg",
+      "enlace": "https://github.com/samuelquisol/DB-Management"
+    },
+    {
+      "nombre": "Gestión de Proyectos",
+      "descripcion": "Planificación y Gestión Eficiente de Proyectos de Desarrollo.",
+      "imagen": "gestion-proyectos.png",
+      "enlace": ""
+    }
+  ]
+}
