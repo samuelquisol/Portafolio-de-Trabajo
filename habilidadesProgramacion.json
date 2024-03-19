@@ -13,6 +13,12 @@
       "enlace": "https://github.com/samuelquisol/DB-Management"
     },
     {
+      "nombre": "Node.js",
+      "descripcion": "Integración de Sistemas de Administración, Almacenamiento y Consultas de Datos",
+      "imagen": "gestion-node.png",
+      "enlace": "https://github.com/samuelquisol/Node.js"
+    },
+    {
       "nombre": "Gestión de Proyectos",
       "descripcion": "Planificación y Gestión Eficiente de Proyectos de Desarrollo.",
       "imagen": "gestion-proyectos.png",
